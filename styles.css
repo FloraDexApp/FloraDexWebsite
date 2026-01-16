@@ -220,6 +220,16 @@ body {
     z-index: 0;
 }
 
+@media (max-width: 768px) {
+    .hero-background {
+        left: var(--spacing-md);
+        right: var(--spacing-md);
+        width: calc(100% - var(--spacing-md) * 2);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+    }
+}
+
 .hero-image {
     width: 100%;
     height: 100%;
@@ -669,10 +679,16 @@ body {
 @media (max-width: 768px) {
     .hero {
         min-height: 60vh;
+        padding: var(--spacing-md);
+    }
+    
+    .hero-container {
+        padding: 0 var(--spacing-md);
     }
     
     .hero-content {
         padding: var(--spacing-lg) var(--spacing-md);
+        margin: 0 auto;
     }
     
     .hero-brand {
@@ -735,6 +751,17 @@ body {
     
     .hero {
         min-height: 50vh;
+        padding: var(--spacing-sm);
+    }
+    
+    .hero-container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .hero-background {
+        left: var(--spacing-sm);
+        right: var(--spacing-sm);
+        width: calc(100% - var(--spacing-sm) * 2);
     }
     
     .hero-content {
